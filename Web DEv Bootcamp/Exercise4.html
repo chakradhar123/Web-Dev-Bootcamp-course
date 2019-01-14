@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forms exercise</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+		<label for="firstname">First Name:</label>
+		<input id="firstname" name="firstname" type="text" placeholder="John" required>
+		<label for="lastname">Last Name:</label>
+		<input id="lastname" name="lastname" type="text" placeholder="Smith" required>
+		</div>
+		<div>
+		<label for="male">Male</label>
+		<input name="gender" id="male" type="radio" value="male">
+		<label for="female">Female</label>
+		<input name="gender" id="female" type="radio" value="female">
+		<label for="other">Other</label>
+		<input name="gender" id="other" type="radio" value="other">
+		</div>
+		<div>
+		<label for="Email">Email:</label>
+		<input id="Email" name="email" type="email" placeholder="your email" required>
+		<label for="password">Password:</label>
+		<input id="password" name="password" type="password" placeholder="your password" pattern=".{5,10}" required title="please type between 5 to 10 characters">
+		</div>
+		<div>
+		<label class="age">Birthday:</label>
+		<select class="age" name="birth month">
+			<option value="0" selected disabled>Month</option>
+			<option value="January">January</option>
+			<option value="February">February</option>
+			<option value="March">March</option>
+		</select>
+		<select class="age" name="birth day">
+			<option value="0" selected disabled>Day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<select class="age" name="birth year">
+			<option value="0" selected disabled>Year</option>
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+		</select>
+		</div>
+		<div>
+		<label for="agree">I agree to the terms and conditions</label>
+		<input id="agree" type="checkbox" name="checkbox" required>
+		</div>
+		<button>Submit</button>
+
+	</form>
+
+</body>
+</html>
